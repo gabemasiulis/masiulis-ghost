@@ -1,0 +1,29 @@
+{{!< default}}
+{{#tag}}
+<div class="blogTitle masiBg">
+  <h1 class="page-title">{{name}}</h1>
+  <h3 class="page-description">
+    {{#if description}}
+      {{description}}
+    {{else}}
+      A {{../pagination.total}}-post collection
+    {{/if}}</h3>
+</div>
+{{/tag}}
+<main class="blogIndex">
+  {{#foreach posts}}
+  <article>
+    <time datetime="{{date format="YYYY-MM-DD"}}" class="masiDate">
+      <h3>
+        {{date format="Do/MMM"}}
+      </h3>
+      <h4>
+        {{date format="YYYY"}}
+      </h4>
+    </time>
+    <header class="masiPostHeader">
+      <h2><a href="{{url}}">{{title}}</a></h2>
+      <h5>{{tags prefix="#" separator=" &bull; "}}</h5>
+  </article>
+  {{/foreach}}
+</main>
