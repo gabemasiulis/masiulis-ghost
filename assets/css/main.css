@@ -1,0 +1,194 @@
+/************************************************************
+GENERAL
+************************************************************/
+body {
+  font-family: 'Roboto', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300; }
+
+h1 {
+  font-size: 2.2rem; }
+
+h2 {
+  font-size: 1.65rem; }
+
+h3 {
+  font-size: 1.29rem; }
+
+h4 {
+  font-size: 1.1rem; }
+
+h5 {
+  font-size: .91rem; }
+
+h6 {
+  font-size: .74rem; }
+
+code {
+  font-family: 'Inconsolata', monospace; }
+
+.masiBg {
+  background: #000 url("/assets/img/64px-diamond-bg.svg");
+  background-size: 12px;
+  position: relative; }
+  .masiBg:after {
+    background: linear-gradient(to right, #fff 0, #b9ee05 25%, #05b9ee 50%, #ee05b9 75%, #000 100%);
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    content: ' '; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #ee05b9; }
+
+h3 a {
+  color: #fff; }
+
+h2 a {
+  color: #05b9ee; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/************************************************************
+HEADING
+************************************************************/
+.heading {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  padding: 4em 8em 4em 4em;
+  background-color: #ababab; }
+  .heading.masiBlog figure svg .masiG1 {
+    fill: #05b9ee; }
+  .heading.masiBlog figure svg .masiG2 {
+    fill: #ee05b9; }
+  .heading.masiBlog figure svg:hover .masiG1 {
+    fill: #ee05b9; }
+  .heading.masiBlog figure svg:hover .masiG2 {
+    fill: #b9ee05; }
+  .heading.masiAbout figure svg .masiG1 {
+    fill: #ee05b9; }
+  .heading.masiAbout figure svg .masiG2 {
+    fill: #555; }
+  .heading.masiAbout figure svg:hover .masiG1 {
+    fill: #555; }
+  .heading.masiAbout figure svg:hover .masiG2 {
+    fill: #b9ee05; }
+  .heading figure {
+    width: 5em; }
+    .heading figure svg {
+      width: 100%;
+      opacity: 0;
+      -webkit-animation: fadeIn 1s ease 0.25s;
+      -moz-animation: fadeIn 1s ease 0.25s;
+      animation: fadeIn 1s ease 0.25s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards; }
+      .heading figure svg .masiG1 {
+        fill: #b9ee05; }
+      .heading figure svg .masiG2 {
+        fill: #05b9ee; }
+      .heading figure svg:hover .masiG1 {
+        fill: #555; }
+      .heading figure svg:hover .masiG2 {
+        fill: #ee05b9; }
+      .heading figure svg .masiPoly {
+        transition: fill .5s ease; }
+  .heading ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: distribute;
+    -moz-box-pack: distribute;
+    box-pack: distribute;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: distribute;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+    width: 400px; }
+  .heading:after {
+    background: linear-gradient(to right, #fff 0, #b9ee05 25%, #05b9ee 50%, #ee05b9 75%, #000 100%);
+    width: 100%;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    left: 0;
+    content: ' '; }
+  .heading li {
+    position: relative; }
+  .heading .masiNavCurrent:after {
+    content: '';
+    width: 100%;
+    height: .25em;
+    position: absolute;
+    left: 0;
+    bottom: .5em; }
+  .heading li:nth-of-type(1).masiNavCurrent:after {
+    background: #b9ee05; }
+  .heading li:nth-of-type(2).masiNavCurrent:after {
+    background: #05b9ee; }
+  .heading li:nth-of-type(3).masiNavCurrent:after {
+    background: #ee05b9; }
+
+/************************************************************
+MAIN
+************************************************************/
+.blogTitle {
+  padding: 3em; }
+  .blogTitle h1 {
+    color: #fff; }
+  .blogTitle h3 {
+    color: #b9ee05; }
+
+/*# sourceMappingURL=main.css.map */
