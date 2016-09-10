@@ -3,7 +3,9 @@ GENERAL
 ************************************************************/
 body {
   font-family: 'Roboto', sans-serif;
-  color: #1a1a1a; }
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato', sans-serif;
@@ -340,5 +342,8 @@ MAIN
     .postMain img {
       max-width: -webkit-calc(100% - 1em);
       max-width: calc(100% - 1em); } }
+@media all and (max-resolution: 200dpi) {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400; } }
 
 /*# sourceMappingURL=main.css.map */
