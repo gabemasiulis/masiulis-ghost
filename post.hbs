@@ -1,0 +1,36 @@
+{{!< default}}
+{{#post}}
+<div class="blogTitle masiBg">
+  <h1 class="page-title">{{title}}</h1>
+  <h3 class="page-description">{{meta_description}}</h3>
+</div>
+<main class="postMain">
+  <section class="articleMeta">
+    {{#if updated_at}}
+      <h3 class="metaHeading">First Posted:</h3>
+      <h3><time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
+        {{date format="DD MMMM YYYY"}}</time></h3>
+      <h3 class="metaHeading">Updated:</h3>
+      <h3><time class="post-date" datetime="{{date updated_at format="YYYY-MM-DD"}}">
+        {{date updated_at format="DD MMMM YYYY"}}</time></h3>
+      <h4 class="metaHeading" style="display:none;" id="articleRelevance"></h4>
+    {{else}}
+      <h3 class="metaHeading">Article Posted:</h3>
+        {{date format="DD MMMM YYYY"}}</time></h3>
+      <h3><time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
+      <h4 class="metaHeading" style="display:none;" id="articleRelevance"></h4>
+    {{/if}}
+    <h3 class="metaHeading">Spread the Word:</h3>
+    <h3><a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">TWITTER</a>
+         &bull;
+         <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+             onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">FACEBOOK</a></h3>
+    <h3 class="metaHeading">TAGGED:</h3>
+    <h3>{{tags prefix="#" separator=" &bull; "}}</h3>
+  </section>
+  <article id="articleContent">
+    {{content}}
+  </article>
+</main>
+{{/post}}
