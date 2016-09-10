@@ -333,7 +333,7 @@ MAIN
     position: static;
     padding: 1em; }
     .postMain .articleMeta {
-      padding: 0 .5em;
+      padding: .1em .5em;
       width: auto;
       margin: .5em;
       position: static;
