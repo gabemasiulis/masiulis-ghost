@@ -9,14 +9,14 @@
     {{#if updated_at}}
       <h3 class="metaHeading">First Posted:</h3>
       <h3><time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
-        {{date format="DD MMMM YYYY"}}</time></h3>
+        {{date format="Do/MMM/YY"}}</time></h3>
       <h3 class="metaHeading">Updated:</h3>
       <h3><time class="post-date" datetime="{{date updated_at format="YYYY-MM-DD"}}">
-        {{date updated_at format="DD MMMM YYYY"}}</time></h3>
+        {{date updated_at format="Do/MMM/YY"}}</time></h3>
       <h4 class="metaHeading" style="display:none;" id="articleRelevance"></h4>
     {{else}}
       <h3 class="metaHeading">Article Posted:</h3>
-        {{date format="DD MMMM YYYY"}}</time></h3>
+        {{date format="Do/MMM/YY"}}</time></h3>
       <h3><time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">
       <h4 class="metaHeading" style="display:none;" id="articleRelevance"></h4>
     {{/if}}
@@ -27,7 +27,7 @@
          <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
              onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">FACEBOOK</a></h3>
     <h3 class="metaHeading">TAGGED:</h3>
-    <h3>{{tags prefix="#" separator=" &bull; "}}</h3>
+    <h5>{{tags prefix="#" separator=" &bull; "}}</h5>
   </section>
   <article id="articleContent">
     {{content}}
