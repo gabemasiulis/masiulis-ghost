@@ -104,21 +104,21 @@ HEADING
   flex-wrap: wrap;
   padding: 4em;
   background-color: #ababab; }
-  .heading.masiBlog figure svg .masiG1 {
-    fill: #05b9ee; }
-  .heading.masiBlog figure svg .masiG2 {
-    fill: #ee05b9; }
-  .heading.masiBlog figure svg:hover .masiG1 {
-    fill: #ee05b9; }
-  .heading.masiBlog figure svg:hover .masiG2 {
-    fill: #b9ee05; }
   .heading.masiAbout figure svg .masiG1 {
-    fill: #ee05b9; }
+    fill: #05b9ee; }
   .heading.masiAbout figure svg .masiG2 {
-    fill: #555; }
+    fill: #ee05b9; }
   .heading.masiAbout figure svg:hover .masiG1 {
-    fill: #555; }
+    fill: #ee05b9; }
   .heading.masiAbout figure svg:hover .masiG2 {
+    fill: #b9ee05; }
+  .heading.masiContact figure svg .masiG1 {
+    fill: #ee05b9; }
+  .heading.masiContact figure svg .masiG2 {
+    fill: #555; }
+  .heading.masiContact figure svg:hover .masiG1 {
+    fill: #555; }
+  .heading.masiContact figure svg:hover .masiG2 {
     fill: #b9ee05; }
   .heading figure {
     -webkit-box-flex: 0;

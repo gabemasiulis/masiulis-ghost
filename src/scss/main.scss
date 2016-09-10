@@ -54,7 +54,7 @@ HEADING
   @include flex-wrap(wrap);
   padding:4em;
   background-color: #ababab;
-  &.masiBlog figure svg {
+  &.masiAbout figure svg {
     & .masiG1 {
       fill: $masiBlu;
     }
@@ -64,7 +64,7 @@ HEADING
     &:hover .masiG1{fill: $masiPnk;}
     &:hover .masiG2{fill: $masiGrn;}
   }
-  &.masiAbout figure svg {
+  &.masiContact figure svg {
     & .masiG1 {
       fill: $masiPnk;
     }
