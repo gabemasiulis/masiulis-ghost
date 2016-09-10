@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  .heading{
+    @include justify-content(center);
+    padding-bottom: 1em;
+    padding-top: 2em;
+    & ul {
+      width: 200px;
+    }
+  }
+}

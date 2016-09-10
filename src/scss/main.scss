@@ -35,7 +35,7 @@ code {
     content: ' ';
   }
 }
-ul {list-style:none; padding:0;}
+ul {list-style:none; padding:0; margin: auto;}
 a {text-decoration: none; color: $masiPnk;}
 h3 a {color: #fff;}
 h2 a {color: $masiBlu;}
@@ -48,7 +48,8 @@ HEADING
 .heading {
   @include display(flex);
   @include justify-content(space-between);
-  padding:4em 8em 4em 4em;
+  @include flex-wrap(wrap);
+  padding:4em;
   background-color: #ababab;
   &.masiBlog figure svg {
     & .masiG1 {
@@ -71,7 +72,7 @@ HEADING
     &:hover .masiG2{fill: $masiGrn;}
   }
   & figure {
-    width: 5em;
+    @include flex(0 0 5em);
     & svg {
       width: 100%;
       opacity: 0;
@@ -84,11 +85,15 @@ HEADING
       & .masiPoly {transition: fill .5s ease;}
     }
   }
+  & nav {
+    @include flex(1 0 150px);
+  }
   & ul {
     @include display(flex);
     @include justify-content(space-around);
     @include align-items(center);
     width: 400px;
+    margin-top: 1em;
   }
   &:after {
     background: linear-gradient(to right,#fff 0,#b9ee05 25%, #05b9ee 50%, #ee05b9 75%, #000 100%);
@@ -131,3 +136,31 @@ MAIN
     color: $masiGrn;
   }
 }
+.siteFooter {
+  padding: 3em;
+  & p {
+    color: $masiPnk;
+  }
+}
+.blogIndex {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(center);
+  & article {
+    @include flex(1 0 280px);
+    @include display(flex);
+    margin: 1em;
+    max-width: 400px;
+    & .masiDate {
+      text-transform: uppercase;
+      text-align: right;
+      @include flex(0 1 20%);
+      margin-right:1.5em;
+      margin-top: .325em;
+    }
+    & .masiPostHeader {
+      @include flex(0 1 80%);
+    }
+  }
+}
+@import "partials/responsive";
