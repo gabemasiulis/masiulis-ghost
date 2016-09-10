@@ -213,7 +213,8 @@ MAIN
   .blogTitle h1 {
     color: #fff; }
   .blogTitle h3 {
-    color: #b9ee05; }
+    color: #b9ee05;
+    max-width: 340px; }
 
 .siteFooter {
   padding: 3em; }
@@ -306,6 +307,9 @@ MAIN
         color: #05b9ee; }
     .postMain .articleMeta .metaHeading {
       color: #fff; }
+  .postMain img {
+    max-width: -webkit-calc(50% - .5em);
+    max-width: calc(50% - .5em); }
 
 @media screen and (max-width: 768px) {
   .heading {
@@ -321,6 +325,20 @@ MAIN
     padding-bottom: 1em;
     padding-top: 2em; }
     .heading ul {
-      width: 200px; } }
+      width: 200px; }
+
+  .postMain {
+    position: static;
+    padding: 1em; }
+    .postMain .articleMeta {
+      padding: .5em;
+      width: auto;
+      margin: .5em;
+      position: static;
+      right: auto;
+      top: auto; }
+    .postMain img {
+      max-width: -webkit-calc(100% - 1em);
+      max-width: calc(100% - 1em); } }
 
 /*# sourceMappingURL=main.css.map */

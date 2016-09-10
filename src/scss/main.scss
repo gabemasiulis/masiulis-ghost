@@ -135,6 +135,7 @@ MAIN
   }
   & h3 {
     color: $masiGrn;
+    max-width: 340px;
   }
 }
 .siteFooter {
@@ -189,6 +190,9 @@ MAIN
       }
     }
     & .metaHeading {color: #fff;}
+  }
+  & img {
+    @include calc(max-width, "50% - .5em");
   }
 }
 

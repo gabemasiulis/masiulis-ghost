@@ -7,4 +7,19 @@
       width: 200px;
     }
   }
+  .postMain {
+    position: static;
+    padding: 1em;
+    & .articleMeta {
+      padding: .5em;
+      width: auto;
+      margin: .5em;
+      position: static;
+      right:auto;
+      top: auto;
+    }
+    & img {
+      @include calc(max-width, "100% - 1em");
+    }
+  }
 }
