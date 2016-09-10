@@ -1,1 +1,14 @@
 {{!< default}}
+{{#post}}
+{{#author}}
+<div class="blogTitle masiBg">
+  <h1 class="page-title">{{name}}</h1>
+  <h3 class="page-description">{{bio}}</h3>
+</div>
+{{/author}}
+<main class="postMain">
+  <article id="articleContent">
+    {{content}}
+  </article>
+</main>
+{{/post}}
